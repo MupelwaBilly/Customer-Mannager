@@ -11,7 +11,10 @@
 
     <VBox spacing="8" styleClass="card">
         <Label text="Name"/>
-        <TextField fx:id="nameField" promptText="Enter full name"/>
+        <TextField fx:id="nameField" promptText="Letters only, e.g. Mary Banda"/>
+
+        <Label text="Contact"/>
+        <TextField fx:id="contactField" promptText="e.g. 0971234567"/>
 
         <Label text="Province"/>
         <ComboBox fx:id="provinceBox" promptText="Select province" maxWidth="Infinity"/>
@@ -22,10 +25,11 @@
             <Button text="Delete selected" onAction="#onDelete" styleClass="danger"/>
         </HBox>
 
-        <Label fx:id="errorLabel" styleClass="error-label"/>
+        <Label fx:id="errorLabel" styleClass="error-label" wrapText="true"/>
     </VBox>
 
     <VBox spacing="8" styleClass="card" VBox.vgrow="ALWAYS">
+        <TextField fx:id="searchField" promptText="Search by name, contact or province..."/>
         <Label fx:id="totalLabel" styleClass="subtle"/>
         <TableView fx:id="table" VBox.vgrow="ALWAYS">
             <columnResizePolicy>
@@ -34,6 +38,7 @@
             <columns>
                 <TableColumn fx:id="snCol" text="SN" minWidth="50" maxWidth="70"/>
                 <TableColumn fx:id="nameCol" text="Name"/>
+                <TableColumn fx:id="contactCol" text="Contact"/>
                 <TableColumn fx:id="provCol" text="Province"/>
             </columns>
         </TableView>
