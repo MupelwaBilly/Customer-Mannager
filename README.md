@@ -1,0 +1,10 @@
+# ICT261 - Introduction to Object Oriented Programming and JAVA
+
+## CUSTOMER MANAGER ASSIGNMENT
+
+NAME: MUPELWA SICHILIMA
+
+STUDENT NUMBER: 202501762
+
+
+
